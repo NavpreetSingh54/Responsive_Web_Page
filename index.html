@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,max-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <title>Admin-Page</title>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2><span class="lab la-accusoft"></span><span>Accusoft</span></h2>
+      </div>
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="" class="active"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-users"></span><span>Customers</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span
+              ><span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-shopping-bag"></span><span>Orders</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-receipt"></span><span>Inventary</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-user-circle"></span><span>Accounts</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="las la-clipboard-list"></span><span>Tasks</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-content">
+      <header>
+        <h2>
+          <label for="nav-toggle"> <span class="las la-bars"></span> </label>Dashboard
+        </h2>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search Here" />
+        </div>
+        <div class="user-wrapper">
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEHERUSEBMQFQ8PEBIPDxUQDxUQEg4QFRIWFiARFhMYHiggGBolGxMTITIiJSktLi4uFyEzRDUsNygtLjcBCgoKDg0OGxAQGS4hICUuKy8yNy0tLS0rLTcuLi0tNTctKzcuMi0tLTArKzcrLS0vLTUrNS0tNS0tLSsrNy0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwMEBQYIAQL/xAA+EAACAQIDBAcFBQYHAQAAAAAAAQIDEQQFEiExUWEGBxMiQXGBFDJCkaFigrHB0SNScpLh8TNDZHSys9Ik/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEDBAIFBv/EACYRAQACAgICAAYDAQAAAAAAAAABAgMRBCESMRMiQVFhcTJSsQX/2gAMAwEAAhEDEQA/AJUABnaQAAAAAAAAAAAAAAAADeZXDYZUl9rx5ckTEbc2tpi9D4O3keGdLbEYSNXk+K/M6mjmMjFgvll/2voeSy9rdJeqsR4y684WQKlTDypb1s4raimcp2AAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFXCrVOPmVclxUsT2mp3andcovw+jLelPRJPg0Vsro+z1qy8HpnHybl/X5FuP0qye2VAKMcRFzcHsktqT+JcVxO1asAABbV8HGryfFfoXIImNpidMNWoui9vo/BlMzdSCqKz3GIxNLsZW9V5Fdq6W1ttTABw7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjl71q/xJKL8k21+LMcWGXZxozF4ZvuywylHbvqqTlb+Rt/dEXisxv69Imk2idfTtthaZjgli48Jx2wlwf6F2DQzsJhM2lh5dniFZrZq/X9TNRkpK6aae1W23LXH4CGNXe2SXuyW9fquRho9tkz2rVSv91/+WSNkKVao6SuouSW/Tv9F4lPBY2GMV4vb4p74+hckCzhmlGfxpcpd1r5mLzHHxrVY6HeKTjJ+DvbcXuZ5VHFd6Oyp9Jef6muVacqErSTUk9xOolMMyDw9MzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ51h5njctzW+FUYuCoVozkrp2ilp8rxkmubJjIh6xXHPcRJ0pOLpQVGE4ScdUotu+zetUn8inNetYiZ+7RxqWvMxH2TL0azuGfYeNaHdk0lVg3d0qltsH+T8UZY596OZjiMgkpQquTVk7q3aR/dmt0vPYSz0f6aUc0Vp9yol3lv8AW29ry+hZg5Ncnyz7/wB/Srk8O2L5ojr/AD9tpPGrnzSrRrK8ZJrk7n2amNYVcqpt6oXhNbnB2+m4vKSkl3mm+KVr+h9lLEYiOGWqTSX48kvEBiMTDDK85JLn4+SMdWrYfM7R1d/4W04vyu9/kYTH4p4ybk926K4ItzrQz9ak6Ls/7o+DzDY1Yunpm/2sLWv8cePmeme1dSvrO4AAcugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGH6WY95dhZyi7TnanDk5ePorsiq9iTemeVVc1oxVFJzhU16XJR1LS1sb2X2kQe3qhiJYevUp9vSnpap+4qi2Onrv3mns80YOTS9rb11D1OHkx0pqZ7mWTML0rxTwtC8ZOM3UhocZOMotPVdNbU9hmjR+mWPWIqqnF92l73Ob3/ACVvqU8Sk2yx+O13NyRTDP56bt0B6fYqrqhiH2vZqLjNPRVs775LZLcvC/MkfBdNI1P86UXwqxX/ACd19TnzojivZ8Qk91WLp+u9fVW9TfJy0pvgrm3kcnJiyajuJYeLxcWfFuephLMekE667taD/hcPyKM6zru7lqfOWpkW2uaT0qoTy/EKrScodok9UG42mt6utz2JlnH5vxLeMxpVyuD8GnnE7dDghroT1iYjC1IUMW5VqNSUaam9tWk5NJPV8avvT28/Am+GBk99l9Td5RDBETL5wENU7+EdplCnSpKkrL+74lQz3tuV1Y1AADl0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAED9YfV8sBiXPD1ZP2jXXcay9yTm7pVFv3+Kutm13J4IU69ekNR1oYKHdpQpxrVGvenOepab+EVFbvG/JDVp6rOiJpE7vG4aFU6SYmgnS105ae6qkVdu3ipbn52MHJ6t/jtPAW0x1p6hVfLe/8p2+qc3TaadmndNeDTvckHA5osxoKXxvuTXCXj6ePqR6lfcbZkGClhIPXslNp24JLxM3MpWaxM+4bP8An3vF5iPU+200XeK8kK1GNdaZxjKL3qSTXyZ84b3V5FU8eepe77jt9dF8nwVDG0ZzowaVRJXctMZv3Z6b22StvRNRCd7bVvW1cmS/k2NWY0KdXxnBauU1sa+aZ6HEyzbdbTt5fOw1rq1Y0vQAbHngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEa9bHQCr0klHE4TS8RTh2dSnKWntoJtpxk9ikrtWe9Pfss5KBMTpExty9PoFmkXb2LEXXCF181sK1Lq9zJ7Z4atCK3/s5Tl6RidNgmbzPpFaVie+3N2CyiGXvc+0Wxua70Xwt8JektdYGUYfFYapXqOFOrQhqjUezVbdSlb3rt2XNryIUq5l+6vWX6GDJS8277ezxpranyRpstFaYryRb4nM6WH3yu+Ee8/wChrWIxtTE+9JtcNy+S2FuVV439pbWZxGfyl/hxS5y7z+W43Lqiz+c8RUw1WcnGrDXSUnsjODu1FeF4tvZ+6RoXWV4+eV1oVqTtUpSU48PJ8mrr1NNK1pPUKs2P4lJq6bBY5JmkM6w9OvT92rHVa93CW5wfNNNehfGl4MxMTqQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB43p2vYltbe5LiBovXJCcsBFxvpjiabq2du64TSvxWpx+hCpt/WL0rfSGt2dJ//ACUJNU+FWe51n9UuXmzUCm07l7fFxzTHESAA5aQAASX1OZ72VSeDm+7VTrULvdUiu9FecVf7rJaOY8sx08trU61P36NSNSO213F3s+T3ep0rgsVHHU4VabvCrCNSD+zJJr8S2k9PI52Pxv5R9VcAHbEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAR31tdJ/YafsdJ/ta8b12vgov4POX4J8Tds6zOGT0Klep7lKDlbc5S3KC5ttL1Ocs0x9TNK061V3qVZucuCv8K5JWS8ji86beHh87eU+oWoAKnrgAAAAATd1R5l7bgezb72FqSp7Xd9nLvx/GS+6QiSF1L43ssVVo+FahrX8VOSt9JyOqT2y8ynlin8dpjABc8UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKOLxEcHTnUm7QpQlUm+EYptv5ICLOuTPe1nDBwfdp2rV7PfNruwflF3+8uBGZdZpj55pWqVqnv1qkqj23td+6uSVl6FqUTO5e/hx/DpFQAELQAAAAANo6sqzo5nQ+06kH60p/mkauZzoRU7PMMK/wDUU4/zPT+ZMe1eWN47R+JdEgAvfPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABp3WtmHsOXTinaWJqQoK2/TtnL00wa+8ARb0u48by1ifugtgAoe8AAAAAAAAGX6Iq+Pwv+6o/9iPATHtxk/hP6dHgAvfPAAAAAAAAAAAAAD//Z"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+          <div>
+            <h4>Navpreet Singh</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="cards">
+          <div class="card-single">
+            <div>
+              <h1>54</h1>
+              <span>Customers</span>
+            </div>
+            <div>
+              <span class="las la-users"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>79</h1>
+              <span>Projects</span>
+            </div>
+            <div>
+              <span class="las la-clipboard-list"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>124</h1>
+              <span>Orders</span>
+            </div>
+            <div>
+              <span class="las la-shopping-bag"></span>
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <h1>$6k</h1>
+              <span>Income</span>
+            </div>
+            <div>
+              <span class="las la-wallet"></span>
+            </div>
+          </div>
+        </div>
+        <div class="recent-grid">
+          <div class="projects">
+            <div class="card">
+              <div class="card-header">
+                <h3>Recent Projects</h3>
+                <button>See All <span class="las la-arrow-right"></span></button>
+               </div>
+              <div class="card-body">
+               <div class="table-responsive">
+                <table width="100%">
+                  <thead>
+                    <tr>
+                      <td>Project Title</td>
+                      <td>Department</td>
+                      <td>Status</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>UI/UX Designer</td>
+                      <td>UI Team</td>
+                      <td><span class="status purple"> </span>Review</td>
+                    </tr>
+                    <tr>
+                      <td>Web Development</td>
+                      <td>Frontend</td>
+                      <td><span class="status pink"> </span>In Progress</td>
+                    </tr>
+                    <tr>
+                      <td>Ushop App</td>
+                      <td>Mobile Team</td>
+                      <td><span class="status orange"> </span>Pending</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>UI/UX Designer</td>
+                      <td>UI Team</td>
+                      <td><span class="status purple"> </span>Review</td>
+                    </tr>
+                    <tr>
+                      <td>Web Development</td>
+                      <td>Frontend</td>
+                      <td><span class="status pink"> </span>In Progress</td>
+                    </tr>
+                    <tr>
+                      <td>Ushop App</td>
+                      <td>Mobile Team</td>
+                      <td><span class="status orange"> </span>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Designer</td>
+                        <td>UI Team</td>
+                        <td><span class="status purple"> </span>Review</td>
+                      </tr>
+                      <tr>
+                        <td>Web Development</td>
+                        <td>Frontend</td>
+                        <td><span class="status pink"> </span>In Progress</td>
+                      </tr>
+                      <tr>
+                        <td>Ushop App</td>
+                        <td>Mobile Team</td>
+                        <td><span class="status orange"> </span>Pending</td>
+                      </tr>
+                    </thead>
+                </table>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="customers">
+            <div class="card">
+            <div class="card-header">
+              <h3>New Customer</h3>
+              <button>See All<span class="las la-arrow-right"></span></button>
+               </div>
+            <div class="card-body">
+              <div class="customer"><div class="info">
+                  <img
+                  src="data:image/jpeg;base64,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"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+              <div><h4>Lewis S. Cunninghum</h4>
+              <small>CEO Expert</small></div></div>
+              <div class="contact"><span class="las la-user-circle"></span>
+                <span class="las la-comment"></span>
+                <span class="las la-phone"></span></div>
+              </div>
+              <div class="customer"><div class="info">
+                <img
+                src="data:image/jpeg;base64,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"
+                width="40px"
+                height="40px"
+                alt=""
+              />
+            <div><h4>Lewis S. Cunninghum</h4>
+            <small>CEO Expert</small></div></div>
+            <div class="contact"><span class="las la-user-circle"></span>
+              <span class="las la-comment"></span>
+              <span class="las la-phone"></span></div>
+            </div>
+            <div class="customer"><div class="info">
+              <img
+              src="data:image/jpeg;base64,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"
+              width="40px"
+              height="40px"
+              alt=""
+            />
+          <div><h4>Lewis S. Cunninghum</h4>
+          <small>CEO Expert</small></div></div>
+          <div class="contact"><span class="las la-user-circle"></span>
+            <span class="las la-comment"></span>
+            <span class="las la-phone"></span></div>
+          </div>
+          <div class="customer"><div class="info">
+            <img
+            src="data:image/jpeg;base64,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"
+            width="40px"
+            height="40px"
+            alt=""
+          />
+        <div><h4>Lewis S. Cunninghum</h4>
+        <small>CEO Expert</small></div></div>
+        <div class="contact"><span class="las la-user-circle"></span>
+          <span class="las la-comment"></span>
+          <span class="las la-phone"></span></div>
+        </div>
+        <div class="customer"><div class="info">
+          <img
+          src="data:image/jpeg;base64,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"
+          width="40px"
+          height="40px"
+          alt=""
+        />
+      <div><h4>Lewis S. Cunninghum</h4>
+      <small>CEO Expert</small></div></div>
+      <div class="contact"><span class="las la-user-circle"></span>
+        <span class="las la-comment"></span>
+        <span class="las la-phone"></span></div>
+      </div>
+      <div class="customer"><div class="info">
+        <img
+        src="data:image/jpeg;base64,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"
+        width="40px"
+        height="40px"
+        alt=""
+      />
+    <div><h4>Lewis S. Cunninghum</h4>
+    <small>CEO Expert</small></div></div>
+    <div class="contact"><span class="las la-user-circle"></span>
+      <span class="las la-comment"></span>
+      <span class="las la-phone"></span></div>
+    </div>
+            </div></div>
+            </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
